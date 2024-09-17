@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    background-image: url('DATA 5.avif');
+    background-color: #000000; /* Black background */
+    background-image: url('DATA\ 5.avif');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
     background-attachment: scroll;
+    color: #f4f4f4; /* Light color for general text */
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures the footer stays at the bottom */
@@ -15,7 +16,7 @@ body {
 
 header {
     background-color: #333;
-    color: white;
+    color: #ffffff; /* White text for header */
     padding: 10px 0;
     text-align: center;
 }
@@ -32,12 +33,17 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: white;
+    color: #ffffff; /* White text for navigation links */
     text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: #dddddd; /* Light grey on hover for better contrast */
 }
 
 h1, h2 {
     margin-top: 0;
+    color: #ffffff; /* White text for headings */
 }
 
 main {
@@ -50,8 +56,8 @@ section {
 }
 
 .section {
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: white; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #ffffff; /* White text inside sections */
     padding: 20px;
     border-radius: 8px;
 }
@@ -65,6 +71,7 @@ section {
 #contact-form input, 
 #contact-form textarea {
     margin-bottom: 10px;
+    color: #ffffff; /* White text for form labels */
 }
 
 #contact-form input, 
@@ -72,11 +79,13 @@ section {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #333; /* Dark background for form fields */
+    color: #ffffff; /* White text in input fields */
 }
 
 #contact-form button {
-    background-color: #333;
-    color: white;
+    background-color: #555; /* Darker button background */
+    color: #ffffff; /* White text for buttons */
     border: none;
     padding: 10px;
     border-radius: 4px;
@@ -84,14 +93,19 @@ section {
 }
 
 #contact-form button:hover {
-    background-color: #555;
+    background-color: #777; /* Lighter background on hover */
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
-    color: white;
-    position: relative; 
+    color: #ffffff; /* White text for footer */
+    position: relative; /* Ensures footer stays in place */
     width: 100%;
+}
+
+canvas {
+    max-width: 100%; /* Ensures the canvas fits within the container */
+    height: auto;    /* Maintains aspect ratio */
 }
