@@ -1,9 +1,16 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url('DATA 5.avif');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the footer stays at the bottom */
 }
 
 header {
@@ -35,10 +42,18 @@ h1, h2 {
 
 main {
     padding: 20px;
+    flex: 1; /* Allows main content to expand and push footer down */
 }
 
 section {
     margin: 20px 0;
+}
+
+.section {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    padding: 20px;
+    border-radius: 8px;
 }
 
 #contact-form {
@@ -52,12 +67,31 @@ section {
     margin-bottom: 10px;
 }
 
+#contact-form input, 
+#contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: white;
-    position: absolute;
-    bottom: 0;
+    position: relative; 
     width: 100%;
 }
