@@ -1,0 +1,15 @@
+# Ignore Python bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore node modules (if using Node.js)
+node_modules/
+
+# Ignore environment variables file (if any)
+.env
